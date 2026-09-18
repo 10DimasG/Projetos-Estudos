@@ -1,0 +1,94 @@
+.containerEntrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 350px;
+    margin: 86px auto 0;
+
+    gap: 20px;
+
+    border: 2px solid white;
+    background-color: white;
+
+    padding: 25px;
+    border-radius: 18px;
+}
+
+.linha {
+    color: black;
+    text-align: center;
+
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+    margin: 0;
+}
+
+.inputEmail,
+.inputSenha {
+    width: 100%;
+    box-sizing: border-box;
+
+    background-color: rgb(206, 202, 202);
+    color: black;
+
+    border-radius: 8px;
+    padding: 16px;
+
+    border: none;
+    outline: none;
+}
+
+.inputEmail::placeholder,
+.inputSenha::placeholder {
+    color: rgb(80, 80, 80);
+}
+
+.inputEmail:focus,
+.inputSenha:focus {
+    outline: 2px solid red;
+}
+
+.botaoEntrar {
+    width: 100%;
+
+    background-color: red;
+    color: white;
+
+    border-radius: 12px;
+    border: none;
+
+    padding: 12px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.botaoEntrar:hover {
+    background-color: darkred;
+}
+
+.botaoCadastrar {
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 14px;
+}
+
+.botaoCadastrar:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.imagem {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
+}

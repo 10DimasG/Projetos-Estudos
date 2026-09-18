@@ -1,110 +1,108 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
-import { Search, Play, ArrowRight } from "lucide-react";
+import { Play, ArrowRight } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 import logo from "./img/logo.png";
-import BarraPesquisa from "./functions/BarraPesquisa";
+import carro from "./img/carro/supraFundo.png";
 
 export default function PaginalInicial() {
-  const [mostrarPesquisa, setMostrarPesquisa] = useState(false);
+  const router = useRouter();
 
   return (
-    <div>
+    <div className={styles.pagina}>
       <header className={styles.cabecalho}>
         <Image
-          className={styles.imagen}
+          className={styles.logo}
           src={logo}
-          alt="Logo"
+          alt="Logo Rota Motors"
           width={120}
           height={120}
+          priority
         />
 
         <nav className={styles.navegacao}>
-          <span className={styles.span}>
-            <a href="/inicio">Inicio</a>
-          </span>
-
-          <span className={styles.span}>
-            <a href="/carros">Carros</a>
-          </span>
-
-          <span className={styles.span}>
-            <a href="/recomenda">Recomenda IA</a>
-          </span>
-
-          <span className={styles.span}>
-            <a href="/comparar">Comparar</a>
-          </span>
-
-          <span className={styles.span}>
-            <a href="/favoritos">Favoritos</a>
-          </span>
-
-          <span className={styles.span}>
-            <a href="/sobre">Sobre</a>
-          </span>
+          <Link href="/telaCompra">Comprar</Link>
+          <Link href="/carros">Carros</Link>
+          <Link href="/recomenda">Recomenda IA</Link>
+          <Link href="/comparar">Comparar</Link>
+          <Link href="/favoritos">Favoritos</Link>
+          <Link href="/sobre">Sobre</Link>
         </nav>
 
         <div className={styles.botoes}>
-          <Search
-            onClick={() => setMostrarPesquisa(!mostrarPesquisa)}
-            className={styles.lupa}
-            size={22}
-          />
+          <button
+            type="button"
+            onClick={() => router.push("/Entrar")}
+            className={styles.entrar}
+          >
+            Entrar
+          </button>
 
-          <button className={styles.entrar}>Entrar</button>
-          <button className={styles.cadastrar}>Cadastrar</button>
+          <button
+            type="button"
+            onClick={() => router.push("/Cadastrar")}
+            className={styles.cadastrar}
+          >
+            Cadastrar
+          </button>
         </div>
       </header>
 
       <main className={styles.mano}>
-        <video
+        <Image
           className={styles.videoFundo}
-          autoPlay
-          muted
-          loop
-          playsInline
-        >
-          <source src="/video/carro.mp4" type="video/mp4" />
-        </video>
+          src={carro}
+          alt="Carro esportivo"
+          fill
+          priority
+          sizes="100vw"
+        />
 
-        <h1 className={styles.linha1}>
-          <strong>O SEU DESTINO</strong>
-          <br />
+        <div className={styles.overlay} />
 
-          <strong style={{ color: "red" }}>
-            PARA CARROS ESPORTIVOS
-          </strong>
-        </h1>
+        <div className={styles.conteudo}>
+          <h1 className={styles.linha1}>
+            <strong>O SEU DESTINO</strong>
+            <br />
 
-        <h1 style={{ fontSize: 17, marginLeft: 8 }}>
-          Explore, compare e encontre o carro dos seus sonhos com <br />
-          a ajuda da nossa Inteligência Artificial.
-        </h1>
-
-        <div className={styles.botao}>
-          <button className={styles.explorar}>
-            <strong>Explorar Carros</strong>
-            <ArrowRight size={12} className={styles.seta} />
-          </button>
-
-          <button className={styles.conheca}>
-            <strong>
-              <Play className={styles.video} size={12} />
-              Conheça o Rota Motors
+            <strong className={styles.textoVermelho}>
+              PARA CARROS ESPORTIVOS
             </strong>
-          </button>
+          </h1>
+
+          <p className={styles.descricao}>
+            Explore, compare e encontre o carro dos seus sonhos com
+            <br />
+            a ajuda da nossa Inteligência Artificial.
+          </p>
+
+          <div className={styles.botao}>
+            <button
+              type="button"
+              className={styles.explorar}
+              onClick={() => router.push("/carros")}
+            >
+              <strong>Explorar Carros</strong>
+              <ArrowRight size={16} className={styles.seta} />
+            </button>
+
+            <button
+              type="button"
+              className={styles.conheca}
+              onClick={() => router.push("/sobre")}
+            >
+              <Play size={14} className={styles.video} />
+              <strong>Conheça o Rota Motors</strong>
+            </button>
+          </div>
         </div>
       </main>
 
-      {mostrarPesquisa && (
-        <BarraPesquisa />
-      )}
-
-      <footer></footer>
+      <footer className={styles.footer} />
     </div>
   );
 }
