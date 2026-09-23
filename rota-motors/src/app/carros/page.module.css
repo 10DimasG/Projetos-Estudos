@@ -1,9 +1,8 @@
 .containerCarros {
     display: flex;
     align-items: center;
-    gap: 18px;
-    padding: 10px 20px;
-    margin: 19px;
+    padding: 10px -99px;
+    margin: 13px;
     border-radius: 11px;
     justify-content: space-between;
     box-sizing: border-box;
@@ -14,24 +13,17 @@
     text-align: center;
     border-radius: 20px;
     border: transparent;
+    margin-right: 80px;
     padding: 14px;
 }
 
-.botao {
-    background-color: red;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
+.seta {
+    margin-left: 90px;
     cursor: pointer;
-    transition: 0.9s;
+    transition: 0.4s;
 }
 
-.botao:hover{
-    background-color: rgb(197, 15, 15);
-    transform: scale(1.1);
-    cursor: pointer;
-    transition: 0.9s;
-}
-.seta{
-    cursor: pointer;
+.seta:hover {
+    transition: 0.4s;
+    transform: translateX(-1.6);
 }

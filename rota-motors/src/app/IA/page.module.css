@@ -1,0 +1,13 @@
+.inputIA{
+    display: flex;
+    justify-content: center;
+    border: transparent;
+    border-radius: 11px;
+    text-align: center;
+}
+.containerIA{
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    align-items: flex-end;
+}

@@ -12,7 +12,6 @@ export default function Comprar (){
         <div className={styles.containerCarros}>
             <Undo2 className={styles.seta} size={20} onClick={() => router.push("/")}/>
             <input className={styles.caixa} type="text" placeholder="Ex: Lamborghini Avetador"/>
-            <button className={styles.botao} title="Enviar">Enviar</button>
             <div className={styles.telaCompra}>
                     
             </div>

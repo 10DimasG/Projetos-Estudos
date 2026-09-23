@@ -27,7 +27,7 @@ export default function PaginalInicial() {
         <nav className={styles.navegacao}>
           <Link href="/telaCompra">Comprar</Link>
           <Link href="/carros">Carros</Link>
-          <Link href="/recomenda">Recomenda IA</Link>
+          <Link href="/IA">Recomenda IA</Link>
           <Link href="/comparar">Comparar</Link>
           <Link href="/favoritos">Favoritos</Link>
           <Link href="/sobre">Sobre</Link>
