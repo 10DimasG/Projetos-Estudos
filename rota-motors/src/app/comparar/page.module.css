@@ -1,0 +1,124 @@
+.containerComparar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título */
+
+.comparar {
+    margin: 0;
+}
+
+.compar {
+    margin: 0;
+}
+
+.ar {
+    color: red;
+    margin-left: -10px;
+}
+
+/* Texto */
+
+.linhaComparar {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Container dos selects */
+
+.selectComparar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20px;
+    gap: 69px;
+}
+
+/* Select individual */
+
+.selectCarro {
+    width: 300px;
+    padding: 12px;
+
+    background-color: black;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 8px;
+
+    font-family: 'Lucida Sans',
+        'Lucida Sans Regular',
+        'Lucida Grande',
+        'Lucida Sans Unicode',
+        Geneva,
+        Verdana,
+        sans-serif;
+
+    font-size: 16px;
+}
+
+/* VS */
+
+.vs {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Caixa dos carros */
+
+.CarrosComparacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 340px;
+    min-height: 200px;
+
+    margin-top: 40px;
+    padding: 27px;
+
+    border: 1px solid white;
+    border-radius: 17px;
+
+    box-sizing: border-box;
+}
+
+/* Imagem */
+
+.CarrosComparacao img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Responsividade */
+
+@media (max-width: 800px) {
+    .selectComparar {
+        gap: 20px;
+    }
+
+    .selectCarro {
+        width: 250px;
+    }
+}
+
+@media (max-width: 600px) {
+    .selectComparar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .selectCarro {
+        width: 300px;
+    }
+
+    .CarrosComparacao {
+        width: 90%;
+    }
+}
