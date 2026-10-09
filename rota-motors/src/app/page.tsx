@@ -25,12 +25,12 @@ export default function PaginalInicial() {
         />
 
         <nav className={styles.navegacao}>
-          <Link href="/telaCompra">Comprar</Link>
-          <Link href="/carros">Carros</Link>
+          <Link href="/TelaCompra">Comprar</Link>
+          <Link href="/Carros">Carros</Link>
           <Link href="/IA">Recomenda IA</Link>
-          <Link href="/comparar">Comparar</Link>
-          <Link href="/favoritos">Favoritos</Link>
-          <Link href="/sobre">Sobre</Link>
+          <Link href="/Comparar">Comparar</Link>
+          <Link href="/Favoritos">Favoritos</Link>
+          <Link href="/Sobre">Sobre</Link>
         </nav>
 
         <div className={styles.botoes}>

@@ -1,0 +1,642 @@
+.containerSobre {
+    min-height: 100vh;
+    background: #070707;
+    color: #fff;
+    overflow: hidden;
+}
+
+
+
+
+.hero {
+    min-height: 92vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 100px 8%;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.95) 0%,
+            rgba(0, 0, 0, 0.72) 42%,
+            rgba(0, 0, 0, 0.18) 100%
+        ),
+        url("/images/supra.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.heroOverlay {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(
+            circle at 75% 50%,
+            rgba(220, 0, 0, 0.16),
+            transparent 35%
+        );
+}
+
+.heroContent {
+    position: relative;
+    z-index: 2;
+    max-width: 760px;
+}
+
+.eyebrow {
+    color: #e10600;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.hero h1 {
+    margin: 25px 0;
+    font-size: clamp(55px, 7vw, 105px);
+    line-height: 0.95;
+    letter-spacing: -5px;
+    font-weight: 800;
+}
+
+.hero h1 span {
+    display: block;
+    color: #e10600;
+}
+
+.heroContent > p {
+    max-width: 620px;
+    color: #b8b8b8;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.heroButton {
+    width: fit-content;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 16px 23px;
+    border: 1px solid #444;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.heroButton:hover {
+    background: #e10600;
+    border-color: #e10600;
+    transform: translateY(-3px);
+}
+
+.heroBottom {
+    position: absolute;
+    bottom: 35px;
+    left: 8%;
+    right: 8%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #777;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.heroBottom div {
+    width: 100px;
+    height: 1px;
+    background: #555;
+}
+
+
+.intro {
+    max-width: 1250px;
+    margin: auto;
+    padding: 160px 7%;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 80px;
+}
+
+.introLabel {
+    color: #666;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.introLabel span {
+    color: #e10600;
+}
+
+.introLabel p {
+    margin: 0;
+}
+
+.smallText {
+    color: #e10600 !important;
+    font-size: 11px !important;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.introText h2 {
+    max-width: 800px;
+    margin: 20px 0 35px;
+    font-size: clamp(42px, 5vw, 75px);
+    line-height: 1;
+    letter-spacing: -3px;
+}
+
+.introText h2 span {
+    color: #777;
+}
+
+.introText > p:last-child {
+    max-width: 650px;
+    color: #aaa;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+
+
+.historia {
+    max-width: 1250px;
+    margin: auto;
+    padding: 100px 7% 180px;
+}
+
+.historiaHeader {
+    max-width: 850px;
+    margin-bottom: 130px;
+}
+
+.historiaHeader span,
+.descoberta > span,
+.pilaresTitulo > span {
+    color: #e10600;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.historiaHeader h2 {
+    font-size: clamp(45px, 6vw, 85px);
+    line-height: 1;
+    letter-spacing: -4px;
+    margin-top: 25px;
+}
+
+.historiaHeader h2 span {
+    color: #777;
+}
+
+.historiaGrid {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 70px;
+    max-width: 950px;
+    margin-bottom: 130px;
+}
+
+.historiaNumero {
+    display: flex;
+    gap: 20px;
+    color: #555;
+    font-size: 12px;
+}
+
+.historiaNumero span {
+    color: #e10600;
+}
+
+.historiaNumero div {
+    width: 1px;
+    height: 100%;
+    min-height: 180px;
+    background: #292929;
+}
+
+.historiaTexto {
+    max-width: 700px;
+}
+
+.historiaTexto p {
+    color: #aaa;
+    font-size: 20px;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+.fraseGrande {
+    color: white !important;
+    font-size: clamp(30px, 4vw, 50px) !important;
+    line-height: 1.15 !important;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+
+.historiaDestaque {
+    margin: 120px 0;
+    padding: 80px;
+    border: 1px solid #292929;
+    background: linear-gradient(
+        135deg,
+        #101010,
+        #080808
+    );
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.destaqueNumero {
+    color: #e10600;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.historiaDestaque p {
+    color: #888;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.historiaDestaque h3 {
+    font-size: clamp(35px, 5vw, 65px);
+    margin: 20px 0 0;
+    letter-spacing: -3px;
+}
+
+.listaValores {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.listaValores span {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #242424;
+    color: #777;
+}
+
+
+.momento {
+    min-height: 700px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 100px 8%;
+    background:
+        linear-gradient(
+            90deg,
+            #050505 0%,
+            rgba(5, 5, 5, 0.8) 40%,
+            rgba(5, 5, 5, 0.15) 100%
+        ),
+        url("/images/supra.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.momentoOverlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        circle at 70% 50%,
+        rgba(225, 6, 0, 0.2),
+        transparent 35%
+    );
+}
+
+.momentoContent {
+    position: relative;
+    max-width: 650px;
+}
+
+.momentoContent > span {
+    color: #e10600;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+.momento h2 {
+    font-size: clamp(45px, 6vw, 85px);
+    line-height: 0.95;
+    letter-spacing: -4px;
+    margin: 25px 0 40px;
+}
+
+.momento h2 strong {
+    display: block;
+    color: #777;
+}
+
+.momentoContent > p {
+    color: #aaa;
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+.motorLine {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
+    color: white;
+}
+
+.motorLine svg {
+    color: #e10600;
+}
+
+
+
+.descoberta {
+    max-width: 1000px;
+    margin: auto;
+    padding: 180px 7%;
+}
+
+.descoberta h2 {
+    font-size: clamp(45px, 6vw, 80px);
+    line-height: 1;
+    letter-spacing: -4px;
+    margin: 25px 0 50px;
+}
+
+.descoberta h2 span {
+    color: #777;
+}
+
+.descoberta > p {
+    max-width: 700px;
+    color: #999;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.descoberta .textoForte {
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-top: 45px;
+}
+
+.pilares {
+    padding: 150px 7%;
+    background: #0b0b0b;
+}
+
+.pilaresTitulo {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.pilaresTitulo h2 {
+    font-size: clamp(42px, 5vw, 70px);
+    line-height: 1;
+    letter-spacing: -3px;
+    margin-top: 25px;
+}
+
+.pilaresTitulo h2 span {
+    color: #777;
+}
+
+.cards {
+    max-width: 1200px;
+    margin: 90px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    min-height: 370px;
+    padding: 40px;
+    border: 1px solid #252525;
+    background: #080808;
+    transition: 0.35s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #e10600;
+}
+
+.cardIcon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e10600;
+    border: 1px solid #333;
+    margin-bottom: 50px;
+}
+
+.card > span {
+    color: #555;
+    font-size: 11px;
+}
+
+.card h3 {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.card p {
+    color: #777;
+    line-height: 1.7;
+}
+
+
+
+.final {
+    min-height: 750px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 7%;
+    background:
+        radial-gradient(
+            circle,
+            rgba(225, 6, 0, 0.15),
+            transparent 35%
+        ),
+        #050505;
+}
+
+.finalGlow {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: rgba(225, 6, 0, 0.08);
+    filter: blur(100px);
+}
+
+.finalContent {
+    position: relative;
+    z-index: 2;
+}
+
+.finalLabel {
+    color: #e10600;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.final h2 {
+    margin: 30px 0 0;
+    font-size: clamp(35px, 5vw, 65px);
+    color: #777;
+}
+
+.final h3 {
+    margin: 0;
+    font-size: clamp(55px, 8vw, 110px);
+    line-height: 0.95;
+    letter-spacing: -6px;
+}
+
+.finalLine {
+    width: 80px;
+    height: 2px;
+    background: #e10600;
+    margin: 50px auto 35px;
+}
+
+.finalBrand {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+.slogan {
+    color: #888;
+    letter-spacing: 2px;
+}
+
+.finalButton {
+    width: fit-content;
+    margin: 45px auto 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 17px 25px;
+    background: #e10600;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.finalButton:hover {
+    transform: translateY(-4px);
+    background: #ff160f;
+}
+
+
+
+.footerSobre {
+    padding: 60px 7%;
+    border-top: 1px solid #202020;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footerSobre h2 {
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+.footerSobre h2 span {
+    color: #e10600;
+}
+
+.footerSobre p {
+    color: #666;
+    font-size: 13px;
+}
+
+.footerRight {
+    text-align: right;
+}
+
+
+
+@media (max-width: 800px) {
+
+    .hero {
+        min-height: 80vh;
+        padding: 80px 7%;
+        background-position: 65% center;
+    }
+
+    .hero h1 {
+        letter-spacing: -3px;
+    }
+
+    .intro {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 100px 7%;
+    }
+
+    .historia {
+        padding: 80px 7% 120px;
+    }
+
+    .historiaGrid {
+        grid-template-columns: 45px 1fr;
+        gap: 25px;
+    }
+
+    .historiaDestaque {
+        padding: 40px 30px;
+        gap: 25px;
+    }
+
+    .momento {
+        min-height: 600px;
+        padding: 80px 7%;
+        background-position: 65% center;
+    }
+
+    .descoberta {
+        padding: 120px 7%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        min-height: auto;
+    }
+
+    .footerSobre {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .footerRight {
+        text-align: left;
+    }
+}
