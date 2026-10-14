@@ -92,3 +92,12 @@
     object-fit: cover;
     border-radius: 10px;
 }
+.botaologin{
+    background-color: transparent;
+    color: black;
+    border: transparent;
+}
+.botaologin:hover{
+    border: red;
+    cursor: pointer;
+}
